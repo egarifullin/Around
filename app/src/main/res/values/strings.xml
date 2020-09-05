@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Around</string>
+    <string name="app_in_name">Around</string>
+    <string name="app_in_after">Register App</string>
+    <string name="textBottom">Войдите в свою учетную запись</string>
+    <string name="sign_in">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="title_activity_videos">VideosActivity</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Видео</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_user">Пользователь</string>
+    <string name="title_likes">Объявления</string>
+    <string name="title_add_videos">Добавление видео</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_content">AddContentActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+</resources>

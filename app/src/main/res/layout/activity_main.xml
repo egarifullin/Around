@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/aroundTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/indie_flower"
+        android:text="Around"
+        android:textColor="@color/btn_sign_in"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/aroundTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher_round"
+        app:civ_border_color="@color/btn_sign_in"
+        app:civ_border_width="5dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/emailEditText"
+        android:layout_marginTop="30dp"
+        android:hint="Your Email"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_profile_image"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/passwordEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Your Password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/repeatPasswordEditText"
+        android:layout_marginTop="8dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/loginSignUpButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Вход"
+        android:background="@color/colorAccent"
+        android:textColor="@color/only_white"
+        android:layout_below="@+id/repeatPasswordEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/toogleLoginSignUpTextView"
+        android:text="Зарегистрировать аккаунт!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:textStyle="bold"
+        android:onClick="toogleLogInMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
